@@ -1,0 +1,138 @@
+
+.nav li {
+    float: right; }
+
+.nav {
+        width: 100%;
+        float: left;
+        margin: 0 0 3em 0;
+        padding: 0;
+        list-style: none;
+        z-index: 100;
+        top: 43px;
+        position: sticky;
+        background: transparent;
+        
+        
+        
+     }
+@media(max-width: 1050px){
+    .nav{
+        top: 37px;
+    }
+}
+
+@media(max-width: 800px){
+    .nav{
+        top: 36px;
+    }
+}
+
+@media(max-width: 500px){
+    .face,
+    .gram,
+    .tweet,
+    .pat,
+    .logo, 
+    .nav.active{
+        display: none;
+    }
+
+}
+
+.nav.active {
+         background: linear-gradient(90deg, rgb(14, 14, 14, 0.8)0%, rgb(10, 10, 42, 0.8) 100%);
+         /* background-image: linear-gradient(to bottom, #0E0E0E , #0A0A2A); */
+
+         
+        
+     }
+
+
+
+
+
+.nav ul {
+    list-style-type: none;
+    margin-right: 20px;
+}
+    
+.nav li a  {
+            display: inline-block;
+            padding: 3px 15px;
+            padding-bottom: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 20px;
+            color: white;
+
+            
+        }
+
+    .logo.active{
+        background-image: url('../../images//whiteLogo.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 300px 300px;
+        position: absolute;
+        height: 300px;
+        width: 300px;
+        top: -105px;
+        float: left;
+        display: block;
+        cursor: pointer;
+        
+        
+      
+      
+    }
+
+   
+    .logo {
+        display: none;
+
+       
+    }
+
+    .face,
+    .gram,
+    .tweet,
+    .pat {
+      color: white;
+      transition: all .2s ease-in-out;
+   
+    }
+
+    .face.active{
+        color: #FF68B4;
+        transition: all .2s ease-in-out;
+        
+        
+        
+    }
+
+    .gram.active {
+        color: #FF68B4;
+        transition: all .2s ease-in-out;
+       
+    }
+
+   .tweet.active {
+        color: #FF68B4;
+        transition: all .2s ease-in-out;
+    }
+
+   .pat.active {
+        color: #FF68B4;
+        transition: all .3s ease-in-out;
+        
+    }
+    
+    .pat:hover,
+    .tweet:hover,
+    .gram:hover,
+    .face:hover {
+        transform: scale(1.5);
+    }
+
+   

@@ -1,0 +1,16 @@
+.small-container {
+    height: 100%;
+    width: 100%;
+    
+    
+  }
+
+
+  .small-input { grid-area: small-input; }
+  .small-words { 
+    font-size: 2em;
+    color: #09f7ea;
+    font-weight: 600; 
+    text-shadow: 1.5px 2px #FF69B4;
+    font-family: Spartan, sans-serif;
+  }

@@ -1,0 +1,70 @@
+.navbar {  
+    position: fixed;
+    justify-content: center;
+    padding: 1.5% 4% 1% ;  
+    cursor: pointer;  
+    color: white;
+    z-index: 100;
+   
+}
+
+.navbar h3{
+    color: white;
+
+}
+
+
+
+.podLogo {
+    background-image: url(../../../images/whiteLogo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 380px 400px;
+    width: 250px;
+    height: 70px;
+    position: relative;
+    top: 0;
+   
+    
+}
+
+.navbar ul { 
+    position: relative;
+    top: -10px;
+    left: -40px;
+     max-width: 100%;  
+     overflow-x: hidden;  
+     transition: 0.5s;  
+     border: none;
+    }
+
+    .navbar ul li {  
+        background-color: rgba(0, 0, 0, 000);  
+        border: 0;  
+        color: #0544f9;  
+        cursor: pointer;  
+        display: inline-table;  
+        font-size: 1.5rem;  
+        height: 3.28rem;  
+        line-height: 3.28rem;  
+        padding: 0 1.14rem;  
+        text-align: center;  
+        border-style: none;
+    }
+
+    .navbar li {
+        margin-top: 20px;
+    }
+
+  
+    .smallTwitter,
+    .smallFacebook,
+    .smallInstagram,
+    .smallYoutube  {
+        margin-top: 50px;
+        color: white;
+        font-size: 30px;
+        padding: 10px;
+       
+    }
+ 

@@ -1,0 +1,73 @@
+.grid-container {
+  display: grid;
+  z-index: 100;
+  grid-template-columns: 1.3fr 5fr 0.1fr  1.1fr;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". . . ."
+    ". Words Patreon ."
+    ". . . .";
+}
+
+
+
+.grid-container:hover {
+  
+}
+
+
+.Words:hover {
+  background-color: #FF5733;
+  color: #052D49;
+}
+
+
+.Words { 
+  grid-area: Words; 
+  background-color: #052D49;
+  padding: 10px 0 5px 0;
+ transform: scale(1.8);
+ text-align: center;
+ font-size: 13px;
+ color: white;
+ font-weight: 900;
+ font-family: 'Mulish', sans-serif;;
+ 
+}
+
+
+
+@media(max-width: 1050px){
+
+  .Words {
+    padding-top: 9px;
+    font-size: 11px;
+  }
+}
+
+@media(max-width: 800px){
+
+  .Words {
+    padding-top: 9px;
+    font-size: 10px;
+  }
+}
+
+@media(max-width: 500px){
+ .grid-container{
+   display: none;
+ }
+}
+
+
+
+
+
+
+
+
+
+

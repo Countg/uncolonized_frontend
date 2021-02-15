@@ -1,0 +1,24 @@
+.hero-image {
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 75vh;
+        z-index: 50;
+      
+      }
+
+
+
+
+
+
+@media(max-width: 1050px){
+        .hero-image {
+         height: 50vh;
+        }
+}
+
+@media(max-width: 500px){
+        .hero-image {
+        height: 20vh;
+        }
+}

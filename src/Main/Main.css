@@ -1,0 +1,15 @@
+.Contact-input{
+    display: block;
+  }
+
+ 
+
+  @media(max-width: 500px){
+   
+    .Contact-input {
+      display: none;
+    }
+
+    
+
+  }

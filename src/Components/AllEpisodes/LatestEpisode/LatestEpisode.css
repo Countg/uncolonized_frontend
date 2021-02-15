@@ -1,0 +1,153 @@
+.Main {
+   background-color: #0A0A2A;
+   height: 165vh;
+   
+   
+}
+
+
+
+.Main h2 {
+    font-size: 3vw;
+    width: 100%;
+    color: white;
+    font-family: Spartan, sans-serif;
+    font-weight: bold;
+    text-shadow: 2px 2px black;
+    text-transform: uppercase;
+    text-decoration: none;
+   
+}
+
+.Main h2:hover {
+    color: #F9EF09;
+
+}
+
+.latestTitle  {
+    font-family: Spartan, sans-serif;
+    font-size: 3.5vw;
+    color: #09f7ea; 
+    text-shadow: 2px 3px #FF69B4;
+
+  }
+
+
+@media(max-width: 1050px){
+    .Main{
+        height: 65vh;
+    }
+    
+}
+
+
+@media(max-width: 800px){
+    .Main{
+        height: 75vh;
+    }
+
+    .Main h2 {
+        font-size: 3vw;
+    }
+
+    .latestTitle {
+        font-size: 3.5vw;
+        font-family: Spartan, sans-serif;
+      }
+   
+}
+
+@media(max-width: 500px){
+    .Main h2 {
+        font-size: 1.5em;
+    }
+    .Main{
+        height: 150vh;
+    }
+    .latestTitle {
+        font-size: 2em;
+        font-family: Spartan, sans-serif;
+        text-shadow: 1.5px 2px #FF69B4;
+      }
+
+}
+
+@media(max-width: 360px){
+    .Main{
+        height: 280vh;
+    }
+}
+
+
+
+
+
+.Photo {
+    width: 100%;
+   
+   
+}
+
+
+.Button button {
+    color: white;
+    font-size: 30px;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4)
+    
+}
+
+.rhap_container, .rhap_container *:focus{
+    outline: none;
+
+}
+
+.rhap_container {
+    background-image: linear-gradient(to top, #0E0E0E , #0A0A2A);
+    border: none;
+   
+}
+
+.rhap_container svg {
+    color: white;
+}
+
+.rhap_progress-section, 
+.rhap_progress-indicator, 
+.rhap_progress-indicator,
+.rhap_time {
+    color: white;
+}
+
+.rhap_progress-container {
+    color: white;
+}
+
+.spotify{
+    color: #1ED761;
+    transition: all .2s ease-in-out;
+    
+}
+
+.google {
+    color: #FFD119;
+    transition: all .2s ease-in-out;
+}
+
+.itunes {
+    color: #DD2A7B;
+    transition: all .2s ease-in-out;
+}
+
+.patreon {
+    color: #EA4335;
+    transition: all .2s ease-in-out;
+}
+
+.google:hover,
+.spotify:hover,
+.itunes:hover,
+.patreon:hover{
+    transform: scale(1.5);
+
+}
