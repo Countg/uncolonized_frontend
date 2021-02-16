@@ -1,25 +1,33 @@
 import React, {useState} from 'react';
-import GavinLogo from '../../../images/Gavin1.png'
+import GavinLogo from '../../../images/Gavin1.jpg'
 import {gavin} from '../../Bios/Bios';
 import Tea from '../../../images/Tea.jpg';
 import {ExternalLink} from 'react-external-link';
-import {Grid, CardMedia, CardActionArea, Typography, Fade, Modal, Backdrop} from '@material-ui/core';
+import {Grid, CardMedia, CardActionArea, Typography, Fade, Modal, Backdrop, Button} from '@material-ui/core';
 import { faFacebook, faTwitter, faInstagram, faYoutube} from '@fortawesome/free-brands-svg-icons';
+import CancelIcon from '@material-ui/icons/Cancel';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { makeStyles } from '@material-ui/core/styles';
+import LazyLoad from 'react-lazyload';
+
 import './Gavin.css';
 
 const useStyles = makeStyles((theme) => ({
   root: {
       height: '100%',
       padding: 5,
+      backgroundColor: 'transparent',
+     
+      
+      
      
   },
     media: {
       height: 117,
       paddingTop: '56.25%',
       marginRight: 8, 
-      boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);'
+      boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);',
+  
       
     },
     name: {
@@ -27,9 +35,18 @@ const useStyles = makeStyles((theme) => ({
         textAlign: 'center',
         marginTop: 115,
         color: '#F7D755',
+        backgroundColor: 'transparent',
         textShadow: '2px 2px 3px #000000;',
         fontFamily:  'Spartan, sans-serif',
         fontWeight: 600,
+        cursor: 'pointer',
+        '&:hover' : {
+          color: '#09f7ea',
+          
+          
+        },
+      
+    
         '@media(max-width: 800px)' : {
           marginTop: 100,
         }
@@ -60,6 +77,11 @@ const useStyles = makeStyles((theme) => ({
     social: {
       textAlign: 'center',
       
+    },
+    closeButton: {
+      color: 'white',
+      float: 'right',
+     
     }
   }));
 
@@ -78,11 +100,14 @@ const handleClose = () => {
     setOpen(false);
 };
 
+
+
  return (
-    <Grid container className={classes.root}>
+    <Grid container className={classes.root} >
         <Grid item sm={4} style={{borderRight: '2px solid #FF69B4', height: '100%'}}>
             <CardActionArea>
-                <CardMedia 
+            <LazyLoad once>
+            <CardMedia 
                 image={GavinLogo}
                 title="Gavin Stephens"
                 className={classes.media}
@@ -92,10 +117,14 @@ const handleClose = () => {
                 >
                
                 </CardMedia>
+
+            </LazyLoad>
+             
             </CardActionArea>
         </Grid>
         <Grid item sm={8}>
             <Typography 
+            onClick={handleOpen}
             variant="body2" 
             component="h1"
             className={classes.name}
@@ -129,14 +158,19 @@ const handleClose = () => {
        >
          {gavin.name}
       </h2>
-       <ExternalLink href="http://gavinstephens.ca" target="_blank" title="Gavin's Home page">
-       <CardMedia
-       image={Tea}
-       className={classes.media}
-       >
+      <LazyLoad once>
+      <ExternalLink href="http://gavinstephens.ca" target="_blank" title="Gavin's Home page">
+      
+      <CardMedia
+      image={Tea}
+      className={classes.media}
+      >
 
-       </CardMedia>
-       </ExternalLink>
+      </CardMedia>
+      </ExternalLink>
+
+      </LazyLoad>
+    
    
       <p className={classes.bio} id="transition-modal-description">{gavin.bio}</p>
     <Grid className={classes.social}>
@@ -157,6 +191,13 @@ const handleClose = () => {
       </ExternalLink>
      
   </Grid>
+
+  <Button 
+        variant='text'
+        className={classes.closeButton}  
+        onClick={handleClose}>
+          <CancelIcon/>
+      </Button>
     </div>
     </Fade>
       </Modal>

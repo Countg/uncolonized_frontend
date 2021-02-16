@@ -9,6 +9,7 @@ import SideDrawer from './Components/Navigation/SideDrawer/SideDrawer';
 import SmallContact from './Components/Contact/SmallContact/SmallContact';
 import DanielSmall from './Components/Hosts/Daniel/DanielSmall/DanielSmall'
 import GavinSmall from './Components/Hosts/Gavin/GavinSmall/GavinSmall';
+import Page404 from '../src/Components/404./404';
 
 
 import {Switch, Route, Redirect} from 'react-router-dom';
@@ -68,9 +69,9 @@ render() {
           <Switch>
             <Route path="/" component={Main}/>
 
-            <Redirect from="/contact" to='/'/>
-            <Redirect from="/daniel" to='/'/>
-            <Redirect from="/gavin" to='/'/>
+            <Redirect from="/contact" to="/"  />
+            <Redirect from="/daniel" to="/" />
+            <Redirect from="/gavin" to="/" />
           </Switch>
         ) 
         }

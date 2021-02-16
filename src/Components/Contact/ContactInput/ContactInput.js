@@ -49,12 +49,13 @@ axios.post('https://uncolonized-site.herokuapp.com/send', data)
         .then(res => {
           setSent(true)
           setSuccess(true)
+          e.target.reset() 
     })
     .catch(err => {
         console.log(err)
         setFail(true)
     })
-       e.target.reset() 
+     
        
     };
 

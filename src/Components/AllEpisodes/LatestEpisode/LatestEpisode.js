@@ -7,7 +7,7 @@ import Episodes from '../Episodes/Episodes';
 
 import AudioPlayer, {RHAP_UI} from 'react-h5-audio-player';
 import axios from 'axios';
-import Background from '../../../images/jakayla-toney--JqkIot9kd4-unsplash.jpg';
+import Background from '../../../images/latestBackground.jpg';
 import './LatestEpisode.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faItunes, faSpotify, faGooglePlay, faPatreon } from '@fortawesome/free-brands-svg-icons';
@@ -67,7 +67,8 @@ class MainEpisode extends Component{
         backgroundImage: `url(${Background})`,
         backgroundAttachment: 'fixed',
         backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover'
+        backgroundSize: 'cover',
+        title: 'jakayla-toney--JqkIot9kd4-unsplash'
      }}
       
        

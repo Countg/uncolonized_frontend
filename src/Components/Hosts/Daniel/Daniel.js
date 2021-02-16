@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import {Grid, CardMedia, CardActionArea, Typography, Fade, Modal, Backdrop} from '@material-ui/core';
+import {Grid, CardMedia, CardActionArea, Typography, Fade, Modal, Backdrop, Button} from '@material-ui/core';
+import CancelIcon from '@material-ui/icons/Cancel';
 import { faTwitter, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {daniel} from '../../Bios/Bios';
@@ -7,6 +8,7 @@ import {ExternalLink} from 'react-external-link';
 import { makeStyles } from '@material-ui/core/styles';
 import DanielLogo from '../../../images/NormieDaniel.JPG';
 import DanielRap from '../../../images/DanielRap.JPG';
+import LazyLoad from 'react-lazyload';
 import './Daniel.css';
 
 
@@ -29,6 +31,10 @@ const useStyles = makeStyles((theme) => ({
           textShadow: '2px 2px 3px #000000;',
           fontFamily:  'Spartan, sans-serif',
           fontWeight: 600,
+          cursor: 'pointer',
+          '&:hover': {
+            color: '#09f7ea'
+          },
           '@media(max-width: 800px)' : {
             marginTop: 100,
           }
@@ -54,6 +60,11 @@ const useStyles = makeStyles((theme) => ({
           textAlign: 'center',
           
         },
+        closeButton: {
+          color: 'white',
+          float: 'right',
+          
+        }
       
     }));
 
@@ -75,6 +86,7 @@ const handleOpen = () => {
         <Grid container className={classes.root}>
          <Grid item sm={8}>
             <Typography 
+            onClick={handleOpen}
             variant="body2" 
             component="h1"
             className={classes.name}
@@ -84,7 +96,8 @@ const handleOpen = () => {
         </Grid>
         <Grid item sm={4} style={{borderLeft: '2px solid #FF69B4', height: '100%'}}>
             <CardActionArea>
-                <CardMedia 
+            <LazyLoad once>
+            <CardMedia 
                 image={DanielLogo}
                 title="Daniel Grant"
                 className={classes.media}
@@ -92,6 +105,9 @@ const handleOpen = () => {
                 >
 
                 </CardMedia>
+
+            </LazyLoad>
+              
             </CardActionArea>
         </Grid>
         <div>
@@ -116,6 +132,7 @@ const handleOpen = () => {
          }}>
            {daniel.name}
           </h2>
+      <LazyLoad once>
       <ExternalLink href="http://TDFeverything.com" target="_blank" title="TDF Everything home page">
       <CardMedia
        image={DanielRap}
@@ -124,6 +141,9 @@ const handleOpen = () => {
 
        </CardMedia>
       </ExternalLink>
+
+      </LazyLoad>
+    
      
     
       <p className={classes.bio} id="transition-modal-description">{daniel.bio}</p>
@@ -138,6 +158,12 @@ const handleOpen = () => {
       </ExternalLink>
       
       </Grid>
+      <Button 
+        variant='outlined'
+        className={classes.closeButton}  
+        onClick={handleClose}>
+          <CancelIcon/>
+      </Button>
      </div>
     </Fade>
       </Modal>

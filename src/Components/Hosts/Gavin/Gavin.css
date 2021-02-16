@@ -1,5 +1,5 @@
 .Gavin {
-background-image: url('../../../images/Gavin2.png');
+background-image: url('../../../images/Gavin2.jpg');
 height: 100%;
 background-position: center;
 background-repeat: no-repeat;
@@ -39,3 +39,4 @@ position: relative;
 .facebook:hover {
     transform: scale(1.5);
 }
+

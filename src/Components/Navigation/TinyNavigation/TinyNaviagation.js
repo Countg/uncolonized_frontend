@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import  {ExternalLink} from 'react-external-link';
 import { Email } from '@material-ui/icons';
 
-import Gavin from '../../../images/Gavin2.png';
+import Gavin from '../../../images/Gavin2.jpg';
 
 import { makeStyles } from '@material-ui/core/styles';
 

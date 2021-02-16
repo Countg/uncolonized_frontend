@@ -31,6 +31,10 @@ const useStyles = makeStyles({
             height: 415,
             margin: 5,
             maxWidth: 230,
+            transition: 'none',
+            '&hover' : {
+                transform: 'translateY(0)'
+            },
             
            
         },
@@ -38,6 +42,19 @@ const useStyles = makeStyles({
             maxWidth: 180,
             margin: 2,
             height: 350,
+            transition: 'none',
+            '&hover' : {
+                transform: 'translateY(0)'
+            },
+            '@media(max-width: 500px)': {
+                maxWidth: 180,
+                margin: 2,
+                height: 350,
+                transition: 'none',
+                '&hover' : {
+                    transform: 'translateY(0)'
+                },
+            },
         },
       
         
@@ -97,7 +114,7 @@ const useStyles = makeStyles({
         backgroundColor: 'rgb(0,0,0) ',/* Fallback color */
         border: '1px solid #FF69B4',
         padding: 10,
-        fontSize: '2em',
+        fontSize: '1em',
         '@media(max-width: 800px)' : {
             fontSize: '1em',
         },

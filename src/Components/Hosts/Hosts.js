@@ -19,10 +19,12 @@ const useStyles = makeStyles((theme) => ({
           backgroundColor: 'transparent',
           '@media(max-width: 1024px)' : {
             height: '70vh',
+            
       
           },
           '@media(max-width: 800px)' : {
             height: '80vh',
+            paddingTop: 10
           },
           '@media(max-width: 500px)' : {
             height: '30vh',
