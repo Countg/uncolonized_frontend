@@ -57,7 +57,9 @@
    
 }
 
-@media(max-width: 500px){
+
+
+@media(max-width: 600px){
     .Main h2 {
         font-size: 1.5em;
     }

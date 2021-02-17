@@ -17,7 +17,7 @@
         }
 }
 
-@media(max-width: 500px){
+@media(max-width: 600px){
         .hero-image {
         height: 20vh;
         }

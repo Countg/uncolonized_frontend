@@ -46,7 +46,7 @@ const useStyles = makeStyles({
             '&hover' : {
                 transform: 'translateY(0)'
             },
-            '@media(max-width: 500px)': {
+            '@media(max-width: 600px)': {
                 maxWidth: 180,
                 margin: 2,
                 height: 350,
@@ -74,7 +74,7 @@ const useStyles = makeStyles({
             height: 180,
             marginBottom: 2,
         },
-        '@media(max-width: 500px)' : {
+        '@media(max-width: 600px)' : {
            height: 200,
            marginBottom: 'none',
         },
@@ -118,7 +118,7 @@ const useStyles = makeStyles({
         '@media(max-width: 800px)' : {
             fontSize: '1em',
         },
-        '@media(max-width: 500px)' : {
+        '@media(max-width: 600px)' : {
            fontSize: '0.5em'
         }
       },

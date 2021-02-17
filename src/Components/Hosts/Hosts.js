@@ -26,7 +26,7 @@ const useStyles = makeStyles((theme) => ({
             height: '80vh',
             paddingTop: 10
           },
-          '@media(max-width: 500px)' : {
+          '@media(max-width: 600px)' : {
             height: '30vh',
           },
           '@media(max-width: 360px)' : {
@@ -39,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
         height: '5vm',
         marginBottom: 5,
         border: '2px solid #FF69B4',
-        '@media(max-width: 500px)' : {
+        '@media(max-width: 600px)' : {
            display: 'none',
         }
          
@@ -50,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
             width: '60%',
             height: '5vm',
             border: '2px solid #FF69B4',
-            '@media(max-width: 500px)' : {
+            '@media(max-width: 600px)' : {
               display: 'none',
             }
          
@@ -71,7 +71,7 @@ const useStyles = makeStyles((theme) => ({
             color: 'white',
             fontFamily: 'Spartan, sans-serif',
             marginBottom: 10,
-            '@media(max-width: 500px)' : {
+            '@media(max-width: 600px)' : {
             fontSize: '0.5em',
             textAlign: 'center',
             }
@@ -85,7 +85,7 @@ const useStyles = makeStyles((theme) => ({
             fontFamily: 'Spartan, sans-serif',
             backgroundColor: '#F9EF09',
             color: '#4743A4',
-            '@media(max-width: 500px)' : {
+            '@media(max-width: 600px)' : {
               width: 200,
               fontSize: '1em',
               marginTop: 10,
@@ -97,7 +97,7 @@ const useStyles = makeStyles((theme) => ({
           headphoneIcon: {
             color: '4743A4',
             fontSize: 40,
-            '@media(max-width: 500px)' : {
+            '@media(max-width: 600px)' : {
               display: 'none'
             }
 

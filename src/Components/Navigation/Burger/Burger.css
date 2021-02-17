@@ -4,7 +4,7 @@
 
 
 
-@media(max-width: 450px){
+@media(max-width: 600px){
     .DrawerToggle {
         width: 40px;
         position: fixed;

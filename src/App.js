@@ -54,7 +54,7 @@ render() {
     
       {/* media query routes */}
       
-      <Media query="(max-width: 500px)">
+      <Media query="(max-width: 600px)">
         {matches =>  
         matches ? (
           <Switch>

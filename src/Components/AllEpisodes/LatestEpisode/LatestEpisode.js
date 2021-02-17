@@ -98,7 +98,7 @@ class MainEpisode extends Component{
         </ExternalLink>
       
        </Grid>
-       <Grid item sm={6}>
+       <Grid item sm={6} xs={10}>
    {!this.state.isLoading ? <AudioPlayer
            src={item.enclosure.link}
            autoPlay={false}
