@@ -26,8 +26,7 @@ const useStyles = makeStyles({
         '&:hover': {
             transform: 'translateY(-10px)'
         },
-       
-        '@media(max-width: 1050px)': {
+       '@media(max-width: 1050px)': {
             height: 415,
             margin: 5,
             maxWidth: 230,
