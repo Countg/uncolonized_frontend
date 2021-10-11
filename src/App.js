@@ -3,6 +3,10 @@ import Navigation from './Components/Navigation/Navigation';
 import Main from './Main/Main';
 import Media from 'react-media';
 
+import MetaDecoration from './Components/Util/MetaData';
+import home from './pages/home.json';
+import metaThumbnail from './pages/metaImages/uncolonizedNew.png'
+
 
 
 import SideDrawer from './Components/Navigation/SideDrawer/SideDrawer';
@@ -43,7 +47,13 @@ closeDrawerToggle = () => {
 render() {
    
   return (
-    
+    <>
+     <MetaDecoration
+        description={home.pageDescription}
+        title={home.pageTitle}
+        imageUrl={metaThumbnail}
+        imageAlt={home.metaImageAlt}
+      />
         <div className="App">
        <PatreonBar/>
        <Burger clicked={this.showDrawerToggle}/>
@@ -82,6 +92,7 @@ render() {
     
     
 </div>
+</>
 
   
     
